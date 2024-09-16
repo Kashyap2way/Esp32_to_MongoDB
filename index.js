@@ -4,13 +4,13 @@ const cors = require('cors');
 
 // Initialize Express app
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 10000;
 
 app.use(cors());
 app.use(express.json()); // Parse JSON bodies
 
 // MongoDB connection URI
-const mongoURI = 'mongodb+srv://kashyapmistry2021:ws7Gqbfgy3*hQZ5@db1cluster1.skf8r.mongodb.net/?retry Writes=true&w=majority&appName=DB1Cluster1';
+const mongoURI = 'mongodb+srv://kashyapmistry2021:ws7Gqbfgy3*hQZ5@db1cluster1.skf8r.mongodb.net/?retryWrites=true&w=majority&appName=DB1Cluster1';
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
